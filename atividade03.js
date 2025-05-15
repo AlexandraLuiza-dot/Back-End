@@ -24,7 +24,7 @@ class Imovel {
     this.endereço = endereço
     }
 }
-exibirInformações(){
+exibirInformações();{
     return `${this.tipo} com ${this.quartos} quartos, localizado(a) na ${this.endereço}`
 }
 let casa = new Imovel(4, 'Casa', 'Rua da Amizade, 789 - Bairro Alegre, nº1011');
@@ -47,8 +47,8 @@ class Veiculo {
     this.ano = ano
     }
 }
-exibirDetalhes(){
-    return `${this.marca} com ${this.modelo} quartos, localizado(a) na ${this.ano}`
+exibirDetalhes();{
+    return (`${this.marca} com ${this.modelo} quartos, localizado(a) na ${this.ano}`)
 }
 let carro = new Veiculo('Toyota', 'Corolla', 2022);
 console.log(casa.exibirDetalhes())
