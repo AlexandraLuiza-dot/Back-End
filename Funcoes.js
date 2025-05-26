@@ -1,13 +1,20 @@
-const carro = {
-    modelo: "Corola"
+import rl from 'readline-sync'
+
+let frase = rl.question("Informe o texto para ser convertido: ");
+
+//decleração de função
+function Maiusculas(texto) {
+    return texto.toUpperCase();
 }
 
-function teste (valor){
-    valor = "Valor alterado dentro da função"
+console.log(Maiusculas(frase))
+
+//Expressão de função
+const cxAlta = function(texto){
+    return texto.toUpperCase();
 }
 
-let marca = "Toyota"
+//arrow function
+const tudoMaiusculas = (texto) => texto.toUpperCase();
 
-console.log(marca);
-teste(marca);
-console.log(marca)
+console.log(cxAlta(frase));
