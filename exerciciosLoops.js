@@ -1,55 +1,55 @@
 //1
 import rl from 'readline-sync';
 
-//let num = rl.questionInt("Informe seu numero para a tabuada: ");
-//let cont = 1;
-//while (cont <= 10){
-//    console.log(`${num} x ${cont} = ${num * cont}`);
-//    cont++;
-//}
+let num = rl.questionInt("Informe seu numero para a tabuada: ");
+let cont = 1;
+while (cont <= 10){
+    console.log(`${num} x ${cont} = ${num * cont}`);
+    cont++;
+}
 
 //2
-//let numAlunos = rl.questionInt("Informe o número de alunos da turma: ");
+let numAlunos = rl.questionInt("Informe o número de alunos da turma: ");
 
-//let contAlunos = 1;
-//let somaMedias = 0;
+let contAlunos = 1;
+let somaMedias = 0;
 
-//while (contAlunos <= numAlunos) {
-//    console.log(`Aluno ${contAlunos}`);
+while (contAlunos <= numAlunos) {
+    console.log(`Aluno ${contAlunos}`);
 
-//    let contBimestres = 1;
-//    let somaNotas = 0;
+    let contBimestres = 1;
+    let somaNotas = 0;
 
-//    while (contBimestres <= 4) {
-//        let nota = rl.questionInt(`Informe a nota do ${contBimestres}º bimestres do aluno ${contAlunos}: `);
-//        somaNotas += nota;
-//        contBimestres++;
-//    }
+    while (contBimestres <= 4) {
+        let nota = rl.questionInt(`Informe a nota do ${contBimestres}º bimestres do aluno ${contAlunos}: `);
+        somaNotas += nota;
+        contBimestres++;
+    }
 
-//    let mediaAluno = somaNotas / 4;
-//    somaMedias += mediaAluno;
-//    console.log(`Média do aluno ${contAlunos}: ${mediaAluno.toFixed(2)}`);
-//    contAlunos++;
-//}
-//let mediaGeralTurma = somaMedias / numAlunos;
-//console.log(`Média geral da Turma: ${mediaGeralTurma.toFixed(2)}`);
+    let mediaAluno = somaNotas / 4;
+    somaMedias += mediaAluno;
+    console.log(`Média do aluno ${contAlunos}: ${mediaAluno.toFixed(2)}`);
+    contAlunos++;
+}
+let mediaGeralTurma = somaMedias / numAlunos;
+console.log(`Média geral da Turma: ${mediaGeralTurma.toFixed(2)}`);
 
 //3
 
-//const numeroAleatorio = Math.floor(Math.random()*100)+1;
-//let palpite;
+const numeroAleatorio = Math.floor(Math.random()*100)+1;
+let palpite;
 
-//do {
-//    palpite = rl.questionInt("Adivinhe um número entre 1 e 100: ");
-//    if (palpite === numeroAleatorio){
-//        console.log("Parabéns! VC GANHOU NA TELE SENA!!!!!")
-//    } else if (palpite < numeroAleatorio) {
-//        console.log("Tente um número maior.")
-//    }else{
-//        console.log("Tente um número menor.")
-//    }
+do {
+    palpite = rl.questionInt("Adivinhe um número entre 1 e 100: ");
+    if (palpite === numeroAleatorio){
+        console.log("Parabéns! VC GANHOU NA TELE SENA!!!!!")
+    } else if (palpite < numeroAleatorio) {
+        console.log("Tente um número maior.")
+    }else{
+        console.log("Tente um número menor.")
+    }
 
-//} while (palpite !== numeroAleatorio);
+} while (palpite !== numeroAleatorio);
 
 //4
 

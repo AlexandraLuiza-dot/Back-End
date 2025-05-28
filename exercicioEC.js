@@ -1,6 +1,6 @@
 import entradaDados from 'readline-sync';
 //1
-let dia = entradaDados.question('infrome o dia da semana');
+let dia = entradaDados.question('informe o dia da semana: ');
   switch (dia) {
     case 1:
         console.log("Domingo");
@@ -30,7 +30,7 @@ let dia = entradaDados.question('infrome o dia da semana');
 }
 
 //2
-let mes = Number(entradaDados.question('infrome o dia da semana'))
+let mes = Number(entradaDados.question('informe o um mês: '))
   switch (mes) {
     case 1:
         console.log("Janeiro");
